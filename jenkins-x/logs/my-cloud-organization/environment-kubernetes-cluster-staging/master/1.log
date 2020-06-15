@@ -1,0 +1,39 @@
+
+Showing logs for build [32mmy-cloud-organization-environme-ngxb7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-8nwtt[0m
+{"level":"info","ts":1592207614.8487267,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1592207614.8491287,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+
+Showing logs for build [32mmy-cloud-organization-environme-ngxb7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-smhn5[0m
+{"level":"info","ts":1592207616.1317701,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1592207616.136883,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+
+Showing logs for build [32mmy-cloud-organization-environme-ngxb7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+
+Showing logs for build [32mmy-cloud-organization-environme-ngxb7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-my-cloud-organization-environme-ngxb7-s27ws[0m
+{"level":"info","ts":1592207620.305812,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/refs/heads/0.8.0-ns-support: no such file or directory"}
+{"level":"info","ts":1592207623.0524414,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/my-cloud-organization/environment-kubernetes-cluster-staging.git @ v0.0.1 in path /workspace/source"}
+
+Showing logs for build [32mmy-cloud-organization-environme-ngxb7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:1f03669e651e74fbf1f92b748557d4ee9c07306f
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmy-cloud-organization-environme-ngxb7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /builder/home/git/credentials
+
+Showing logs for build [32mmy-cloud-organization-environme-ngxb7-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-helm-apply[0m
+Modified file /workspace/source/env/Chart.yaml to set the chart to version 1
+Namespace **-staging created 
+creating the lock configmap **-lock-**-staging
+lock configmap **-lock-**-staging created
+Ignoring templates/.gitignore
+Ignoring templates/wildcardcert-secret.yaml
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: chartmuseum.jenkins-x.io http://chartmuseum.jenkins-x.io
+Successfully added Helm repository chartmuseum.jenkins-x.io.
+
+cleaning the lock configmap **-lock-**-staging
